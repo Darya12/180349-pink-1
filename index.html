@@ -5,8 +5,210 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="visually-hidden">Приложение Pink</h1>
+      <div class="logo">
+        <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink" title="Логотип Pink">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toogler">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <img class="promo__hand" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Розовый экран">
+          <div class="promo__content">
+            <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+            <a class="promo__link-market btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
+            <div class="link-market">
+              <a class="link-market__item link-market__item--apple" href="https://www.apple.com/itunes/" title="Apple">
+                <img class="link-market__image" src="img/logo-apple.svg" width="47" height="56" alt="Apple">
+              </a>
+              <a class="link-market__item link-market__item--android" href="https://play.google.com/" title="Android">
+                <img class="link-market__image" src="img/logo-android.svg" width="43" height="47" alt="Android">
+              </a>
+              <a class="link-market__item link-market__item--windows" href="https://www.microsoft.com/en-us/store/apps" title="Microsoft">
+                <img class="link-market__image" src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
+              </a>
+            </div>
+            <p class="promo__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+      <div class="slogan">
+        <p class="slogan__text">Устали от серости мегаполиса?</p>
+        <p class="slogan__text">Нам есть, что вам <br> предложить!</p>
+      </div>
+      <section class="offer">
+        <div class="offer__wrapper">
+          <img class="offer__tablet-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото">
+          <div class="offer__inner">
+            <div class="offer__item">
+              <h3 class="offer__title">Поднимает настроение</h3>
+              <p class="offer__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <img class="offer__image offer__image--none" src="http://placeholder.it" width="" height="" alt="Фото">
+            </div>
+            <div class="offer__item">
+              <h3 class="offer__title">Меняет мир вокруг</h3>
+              <p class="offer__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <img class="offer__image offer__image--none" src="http://placeholder.it" width="" height="" alt="Фото">
+            </div>
+            <div class="offer__item">
+              <h3 class="offer__title">Заводит новых друзей</h3>
+              <p class="offer__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="offer__image offer__image--tablet" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Фото">
+            </div>
+          </div>
+        </div>
+        <div class="offer__item offer__item--wide">
+          <div class="offer__wrapper-item">
+            <h3 class="offer__title">Эффект на 24 часа!</h3>
+            <p class="offer__descr">Британские ученые провели исследования и доказали, что положительные эффект от использования приложения длится целые сутки!</p>
+            <a class="offer__study" href="">Узнать больше об исследовании</a>
+          </div>
+          <div class="offer__wrapper-image">
+            <img class="offer__image" src="http://placeholder.it" width="" height="" alt="Фото">
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper slider">
+          <div class="review__item slider__inner">
+            <blockquote class="review__person slider__item ">
+              <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <footer class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="review__item slider__inner">
+            <blockquote class="review__person  slider__item">
+              <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <footer class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="review__item slider__inner">
+            <blockquote class="review__person slider__item">
+              <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <footer class="review-cite">
+                <cite class="review__author">Николай Петров</cite>
+                <p class="review__profession">водитель трамвая, 25 лет</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-1" checked>
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-2">
+        <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-3">
+        <div class="slider__labels">
+          <label class="slider__label slider__label--active" for="slider__toogle-1"></label>
+          <label class="slider__label" for="slider__toogle-2"></label>
+          <label class="slider__label" for="slider__toogle-3"></label>
+        </div>
+      </section>
+      <table class="rate">
+        <tr class="rate__line">
+          <td class="rate__name"> База <span class="rate__price">1,99 USD</span>
+          </td>
+          <td class="rate__name">Стандарт <span class="rate__price">3,99 USD</span>
+          </td>
+          <td class="rate__name">Анлим <span class="rate__price">9,99 USD</span>
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Розовый фильтр
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Смайлики
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+        <tr class="rate__line">
+          <td class="rate__item">Комментарии
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__not-available">нет</span>
+          </td>
+          <td class="rate__item"><span class="rate__available">да</span>
+          </td>
+        </tr>
+      </table>
+      <section class="contacts">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__descr">
+          <div class="contacts__wrapper">
+            <p class="contacts__item">Звоните:</p>
+            <a class="contacts__link" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+          </div>
+          <div class="contacts__wrapper contacts__wrapper--desktop">
+            <p class="contacts__item">Пишите:</p>
+            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__wrapper">
+            <p class="contacts__item">Приезжайте в гости: </p>
+            <a class="contacts__link"> ул. Большая Конюшенная, 19/8</a>
+          </div>
+        </div>
+      </section>
+      <div class="map">
+        <img  class="map__image" src="img/bg-map-mobile@1x.png" alt="Карта">
+      </div>
+    </main>
+    <footer class="page-footer page-footer--index">
+      <div class="logo logo--footer">
+        <img  class="logo__image" src="http://placeholder.it" alt="Логотип Pink" title="Логотип Pink">
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="" title="Twitter">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="" title="Facebook">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--play" href="" title="Play">Play</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placeholder.it" alt="Логотип HTML Академии" title="Логотип HTML Академии"></a>
+      </div>
+    </footer>
   </body>
 </html>
