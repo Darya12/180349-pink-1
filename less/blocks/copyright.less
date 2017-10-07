@@ -1,0 +1,17 @@
+.copyright {
+  width: 200px;
+  text-align: center;
+  outline: 1px solid orange;
+
+  @media (min-width: @tablet-width) {
+    width: 180px;
+    padding: 0 10px;
+    text-align: right;
+  }
+}
+
+.copyright__text {
+  .text();
+  font-size: @font-text-size;
+  line-height: 18px;
+}

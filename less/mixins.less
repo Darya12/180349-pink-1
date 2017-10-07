@@ -1,0 +1,47 @@
+.container() {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 960px;
+  }
+}
+
+.text() {
+  font-family: @font-regular;
+  font-size: @font-text-size;
+  line-height: 24px;
+  color: @text-color;
+}
+
+.title() {
+  font-family: @font-light;
+  font-size: @font-title-size;
+  color: @color-white;
+}
+
+.block-title() {
+  font-family: @font-regular;
+  font-size: @font-text-size;
+  color: @color-pink;
+  line-height: 18px;
+}
+
+.block-title-index() {
+  font-family: @font-bold;
+  font-size: @font-more-size;
+  line-height: 24px;
+  color: @color-black;
+}
+
+.btn-form() {
+  font-family: @font-bold;
+  color: @color-white;
+  font-size: @font-more-size;
+  line-height: 30px;
+}

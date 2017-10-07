@@ -1,0 +1,28 @@
+.logo {
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  text-align: left;
+  outline: 1px solid red;
+
+  &--footer {
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
