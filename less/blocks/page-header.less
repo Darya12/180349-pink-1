@@ -1,0 +1,14 @@
+.page-header {
+  .container();
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: @menu-color;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    background-color: transparent;
+  }
+}

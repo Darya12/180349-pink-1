@@ -1,0 +1,73 @@
+.upload {
+  /*@mixin inner-container;*/
+  display: flex;
+  flex-direction: column;
+  background-color: @color-grey;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.upload__photo,
+.upload__parametr {
+  width: 280px;
+  outline: 1px solid orange;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 470px;
+  }
+}
+
+.upload__button {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.upload__btn {
+  color: @color-pink;
+  background-color: @bg-color;
+  border: 3px solid @color-pink;
+  width: 100%;
+  margin-bottom: 12px;
+
+  &:hover {
+    background-color: @color-pink;
+    color: @color-white;
+  }
+
+  &:active {
+    /*color: color(@color-pink lightness(70%));*/
+    background-color: @color-pink;
+  }
+}
+
+.upload__btn--invert {
+  /*color: color(@menu-color lightness(90%));
+  border: 3px solid color(@menu-color lightness(90%));
+
+  &:hover {
+    color: color(@menu-color lightness(70%));
+    background-color: @bg-color;
+    border: 3px solid color(@menu-color lightness(70%));
+  }
+
+  &:active {
+    color: color(@menu-color lightness(90%));
+    background-color: color(@menu-color lightness(70%));
+  }*/
+}
+
+.upload__block {
+  margin: 20px;
+}

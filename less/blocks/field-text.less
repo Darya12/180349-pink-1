@@ -1,0 +1,27 @@
+.field-text {
+  .text();
+  line-height: 30px;
+
+  &--invert {
+    color: @color-pink;
+    text-transform: uppercase;
+  }
+}
+
+.field-text__narrow {
+  @media (min-width: @tablet-width) {
+    width: 290px;
+  }
+}
+
+.field-input::-webkit-input-placeholder {
+  .text();
+  font-size: @font-more-size;
+  line-height: 30px;
+}
+
+.field-input:-moz-placeholder {
+  .text();
+  font-size: @font-more-size;
+  line-height: 30px;
+}

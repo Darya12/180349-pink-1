@@ -1,0 +1,65 @@
+.slogan {
+  .container();
+  margin-top: 40px;
+  outline: 1px solid green;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 68px;
+  }
+}
+
+.slogan__text {
+  display: block;
+  .text();
+  line-height: 1.2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: @font-light;
+  font-size: @font-title-size;
+  background-color: @color-white;
+  outline: 1px solid grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    font-size: @font-tablet-size;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: @font-desktop-size;
+  }
+
+  &--small {
+    padding-top: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: @font-text-size;
+    line-height: 30px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 42px;
+      padding-left: 60px;
+      padding-right: 60px;
+      font-size: @font-more-size;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 23px;
+      padding-left: 120px;
+      padding-right: 120px;
+      font-size: @font-more-size;
+    }
+  }
+}
+
+.slogan__hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+}
