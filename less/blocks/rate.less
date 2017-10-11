@@ -1,14 +1,119 @@
 .rate {
-  display: flex;
+  position: relative;
+  /*background-color: @color-grey;*/
+  /*width: 100%;*/
+  max-height: 430px;
+  outline: 1px solid green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 60px;
+    /*background-color: @color-grey;*/
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center -1px;
+  }
+}
+
+.rate__wrapper {
+  max-width: @mobile-width;
+  padding-top: 85px;
+  padding-right: 0;
+  padding-bottom: 48px;
+  padding-left: 0;
+  margin: 0 auto;
+  outline: 1px solid grey;
+}
+
+.rate__inner-wrapper {
+  max-width: @mobile-width;
+  /*overflow: hidden;*/
+  margin: 0;
+  margin-top: -40px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  outline: 1px solid blue;
+}
+
+.rate__table {
+  position: relative;
+  width: 1120px;
+  margin-left: -559px;
+  padding-bottom: 38px;
+  box-sizing: border-box;
+}
+
+.rate__name {
+  position: relative;
+  width: 280px;
+  padding-top: 17px;
+  padding-right: 18px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  background-color: @color-outer-space;
+  color: @color-white;
+  font-size: @font-more-size;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.rate__name--hit {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 73px;
+  }
+
+  &::after {
+    position: absolute;
+    content: attr(data-description);
+    left: 9px;
+    top: 12px;
+    transform: rotate(-45deg);
+  }
 }
 
 .rate__price {
+  display: block;
   .title();
   line-height: 30px;
 }
 
-.rate__item {
+.rate__filter,
+.rate__available,
+.rate__not-available {
+  position: relative;
+  width: 280px;
+  padding-top: 12px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 22px;
   .text();
   line-height: 30px;
   text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.rate__available {
+  background-image: url("../img/icon-yes.svg");
+  background-size: 31px 21px;
+  background-repeat: no-repeat;
+  background-position: top 18px right 18px;
+}
+
+.rate__not-available {
+  background-image: url("../img/icon-no.svg");
+  background-size: 27px 26px;
+  background-repeat: no-repeat;
+  background-position: top 13px right 20px;
 }
