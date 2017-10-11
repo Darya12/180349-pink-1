@@ -2,8 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
+    <!--Pixel Glass-->
+    <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/layout/pink-index-mobile.jpg");
+    }
+    /* Планшет */
+      @media (min-width: 660px ) {
+        HTML {
+      /* Планшетный макет */
+        background-image: url("img/layout/pink-index-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 960px ) {
+        HTML {
+      /* Десктопный макет */
+        background-image: url("img/layout/pink-index-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   </head>
   <body>
     <header class="page-header">
@@ -100,24 +127,6 @@
               </footer>
             </blockquote>
           </div>
-          <div class="review__item slider__inner">
-            <blockquote class="review__person  slider__item">
-              <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <footer class="review-cite">
-                <cite class="review__author">Николай Петров</cite>
-                <p class="review__profession">водитель трамвая, 25 лет</p>
-              </footer>
-            </blockquote>
-          </div>
-          <div class="review__item slider__inner">
-            <blockquote class="review__person slider__item">
-              <p class="review__post">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <footer class="review-cite">
-                <cite class="review__author">Николай Петров</cite>
-                <p class="review__profession">водитель трамвая, 25 лет</p>
-              </footer>
-            </blockquote>
-          </div>
         </div>
         <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-1" checked>
         <input class="slider__toogle" type="radio" name="toogle" id="slider__toogle-2">
@@ -128,46 +137,58 @@
           <label class="slider__label" for="slider__toogle-3"></label>
         </div>
       </section>
-      <table class="rate">
-        <tr class="rate__line">
-          <td class="rate__name"> База <span class="rate__price">1,99 USD</span>
-          </td>
-          <td class="rate__name">Стандарт <span class="rate__price">3,99 USD</span>
-          </td>
-          <td class="rate__name">Анлим <span class="rate__price">9,99 USD</span>
-          </td>
-        </tr>
-        <tr class="rate__line">
-          <td class="rate__item">Розовый фильтр
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-        </tr>
-        <tr class="rate__line">
-          <td class="rate__item">Смайлики
-          </td>
-          <td class="rate__item"><span class="rate__not-available">нет</span>
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-        </tr>
-        <tr class="rate__line">
-          <td class="rate__item">Комментарии
-          </td>
-          <td class="rate__item"><span class="rate__not-available">нет</span>
-          </td>
-          <td class="rate__item"><span class="rate__not-available">нет</span>
-          </td>
-          <td class="rate__item"><span class="rate__available">да</span>
-          </td>
-        </tr>
-      </table>
+      <section class="rate">
+        <div class="rate__wrapper">
+          <div class="rate__inner-wrapper">
+            <table class="rate__table slider">
+              <tr class="rate__line">
+                <th class="rate__name rate__name--null">
+                </th>
+                <th class="rate__name">База<span class="rate__price">1,99 USD</span>
+                </th>
+                <th class="rate__name rate__name--hit" data-description ="Хит">Стандарт<span class="rate__price">3,99 USD</span>
+                </th>
+                <th class="rate__name">Анлим<span class="rate__price">9,99 USD</span>
+                </th>
+              </tr>
+            <tr class="rate__line">
+              <td class="rate__filter">Розовый фильтр
+              </td>
+              <td class="rate__available"><span class="rate__option-name">да</span>
+              </td>
+              <td class="rate__available"><span class="rate__option-name">да</span>
+              </td>
+              <td class="rate__available"><span class="rate__option-name">да</span>
+              </td>
+            </tr>
+            <tr class="rate__line">
+              <td class="rate__filter">Смайлики
+              </td>
+              <td class="rate__not-available"><span class="rate__option-name">нет</span>
+              </td>
+              <td class="rate__available"><span class="rate__option-name">да</span>
+              </td>
+              <td class="rate__available"><span class="rate__option-name">да</span>
+              </td>
+            </tr>
+            <tr class="rate__line">
+              <td class="rate__filter">Комментарии
+              </td>
+              <td class="rate__not-available"><span class="rate__option-name">нет</span>
+              </td>
+              <td class="rate__not-available"><span class="rate__option-name">нет</span>
+              </td>
+              <td class="rate__available"><span class="option-name">да</span>
+              </td>
+            </tr>
+          </table>
+          <div class="slider__pagination slider__pagination--rate">
+            <span class="slider-pagination__item"></span>
+            <span class="slider-pagination__item slider-pagination__item--active"></span>
+            <span class="slider-pagination__item"></span>
+          </div>
+        </div>
+      </section>
       <section class="contacts">
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
         <div class="contacts__descr">
